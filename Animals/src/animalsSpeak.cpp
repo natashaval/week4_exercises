@@ -17,6 +17,9 @@ int main()
     pet.push_back(std::move(dog));
     pet.push_back(std::make_unique<Cat>());
     pet.push_back(std::make_unique<Budgie>());
+
+    pet.push_back(std::make_unique<Labrador>());
+    pet.push_back(std::make_unique<Terrier>());
     
     // Create new object and push for vector -> since vector use pass by value, we'll have object from Dog and copy in vector
     // std::vector<Animal> pet;

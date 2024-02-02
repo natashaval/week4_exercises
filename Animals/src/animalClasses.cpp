@@ -12,3 +12,7 @@ void Cat::speak() {
 void Budgie::speak() {
     std::cout << "Tweet" << std::endl;
 }
+
+void Terrier::speak() {
+    std::cout << "Yap" << std::endl;
+}

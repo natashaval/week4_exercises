@@ -3,7 +3,7 @@
 class Animal
 {
 public:
-    // NO constructor in animal
+    // NO constructor in Animal & constructors cannot be declared virtual
     // Animal() {}
     // ~Animal() {}
 
@@ -34,3 +34,14 @@ public:
     ~Budgie() {}
     void speak();
 };
+
+class Labrador : public Dog {
+
+};
+
+class Terrier : public Dog {
+    void speak();
+};
+
+// class Mammal & Bird is an abstract sub-class of animal
+// Dog, Cat inherit from Mammal and Budgie inherit from Bird
