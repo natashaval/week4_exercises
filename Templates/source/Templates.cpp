@@ -14,5 +14,13 @@ int main()
     // this pass because every parameter is double, so the compiler can infer which function
     // double d_quad = quadratic(1.4, 2.0, 3.9, 0.1);
 
+    Fraction a = Fraction(1, 2);
+    Fraction b = Fraction(3, 4);
+    Fraction addition_ab = a + b;
+    Fraction multiply_ab = a * b;
+
+    std::cout << "Fraction " << a << " + " << b << " = " << addition_ab << std::endl;
+    std::cout << "Fraction " << a << " * " << b << " = " << multiply_ab << std::endl;
+
     return 0;
 }

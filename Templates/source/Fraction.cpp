@@ -5,7 +5,8 @@ Fraction::Fraction(int a, int b) : numerator(a), denominator(b)
     Simplify();
 }
 
-Fraction Fraction::Multiply(Fraction other)
+// Fraction Fraction::Multiply(Fraction other)
+Fraction Fraction::operator* (Fraction other)
 {
     return Fraction(numerator * other.numerator, denominator * other.denominator);
 }
@@ -32,7 +33,8 @@ void Fraction::Simplify()
     }
 }
 
-Fraction Fraction::Add(Fraction other)
+// Fraction Fraction::Add(Fraction other)
+Fraction Fraction::operator+(Fraction other)
 {
     int new_num = numerator * other.denominator + other.numerator * denominator;
     int new_den = denominator * other.denominator;

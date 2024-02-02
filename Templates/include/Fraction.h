@@ -7,9 +7,11 @@ class Fraction
     public:
     Fraction(int a, int b);
 
-    Fraction Multiply(Fraction other);
+    // Fraction Multiply(Fraction other);
+    Fraction operator* (Fraction other);
 
-    Fraction Add(Fraction other);
+    // Fraction Add(Fraction other);
+    Fraction operator+ (Fraction other);
 
     std::string toString() const;
 
