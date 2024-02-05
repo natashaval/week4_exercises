@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 
+// num_type = template over type (int, double); L, T, M template over value
 template <typename num_type, int L, int T, int M>
 class Measure
 {
@@ -14,7 +15,7 @@ namespace measures
     using length = Measure<double, 1, 0, 0>;
     using time = Measure<double, 0, 1, 0>;
     using mass = Measure<double, 0, 0, 1>;
-    using speed = Measure<double, 1, -1, 0>;
+    using speed = Measure<double, 1, -1, 0>; // ex: m/s
     using acceleration = Measure<double, 1, -2, 0>;
     using energy = Measure<double, 2, -2, 1>;
     using scalar = Measure<double, 0, 0, 0>;
